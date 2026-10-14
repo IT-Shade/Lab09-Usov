@@ -1,23 +1,7 @@
-﻿int totalWeeks = 3;
+﻿int N = 10;
+for (int i = 1; i <= N; i += 2)
 
-for (int week = 1; week <= totalWeeks; week++)
-{
-    for (int day = 1; day <= 5; day++)
-    {
-        Console.WriteLine($"Неделя {week}, день {day}");
-    }
-    Console.WriteLine($"^_^");
-}
+Console.WriteLine(i);
 
-int count = 0;
-for (int ticket = 1; ticket <= 30; ticket++)
-{
-    if (ticket == 4 || ticket == 12 || ticket == 19)
-    {
-        count++;
-        continue; // билет уже вытянут
-    }
-    Console.WriteLine($"Первый доступный билет: {ticket}");
-    Console.WriteLine($"Пропущенных билетов: {count}");
-    break;
-}
+for (int i = 100; i >= 0; i -= 10)
+Console.WriteLine(i);
